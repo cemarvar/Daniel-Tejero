@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daniel Tejero Olivares — Artista</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-name" onclick="goHome()">Daniel Tejero Olivares</div>
+  <div class="nav-links">
+    <div class="nav-link" id="nav-bio" onclick="showPage('bio')">Bio</div>
+    <div class="nav-link" id="nav-obras" onclick="showPage('obras')">Obras</div>
+    <div class="nav-link" id="nav-textos" onclick="showPage('textos')">Textos</div>
+    <div class="nav-link" id="nav-catalogos" onclick="showPage('catalogos')">Catálogos</div>
+    <div class="nav-link" id="nav-cv" onclick="showPage('cv')">Curriculum</div>
+    <div class="nav-link" id="nav-contacto" onclick="showPage('contacto')">Contacto</div>
+  </div>
+</nav>
+
+<!-- HOME -->
+<div class="page visible" id="page-home">
+  <div class="hero">
+    <div class="hero-left">
+      <h1>Daniel<br><em>Tejero</em><br>Olivares</h1>
+    </div>
+    <div class="hero-right">
+      <p class="hero-sub">Artista plástico &amp; investigador — Altea / Valencia</p>
+      <p class="hero-bio">Doctor en Bellas Artes y Catedrático de Escultura en la Facultad de Bellas Artes de Altea (<em>Universidad Miguel Hernández</em>). Su trabajo evoluciona desde la preocupación por el cuerpo y las temáticas de sexo, género y sexualidad hacia la celebración del deseo y los placeres periféricos. Director del grupo de investigación <em>Figuras del Exceso y Políticas del Cuerpo</em> (FIDEX) y del <em>Centro de Investigación en Arte</em> (CíA).</p>
+    </div>
+  </div>
+  <div class="home-grid">
+    <div class="home-cell" onclick="showPage('bio')"><div class="cell-num">00</div><div class="cell-title">Biografía</div><div class="cell-arrow">Sobre el artista →</div></div>
+    <div class="home-cell" onclick="showPage('obras')"><div class="cell-num">01</div><div class="cell-title">Obras</div><div class="cell-arrow">Ver series →</div></div>
+    <div class="home-cell" onclick="showPage('textos')"><div class="cell-num">02</div><div class="cell-title">Textos</div><div class="cell-arrow">Propios y ajenos →</div></div>
+    <div class="home-cell" onclick="showPage('catalogos')"><div class="cell-num">03</div><div class="cell-title">Catálogos</div><div class="cell-arrow">Ver publicaciones →</div></div>
+    <div class="home-cell" onclick="showPage('cv')"><div class="cell-num">04</div><div class="cell-title">Curriculum</div><div class="cell-arrow">Ver trayectoria →</div></div>
+    <div class="home-cell" onclick="showPage('contacto')"><div class="cell-num">05</div><div class="cell-title">Contacto</div><div class="cell-arrow">Universidad Miguel Hernández →</div></div>
+  </div>
+</div>
+
+<!-- BIO -->
+<div class="page" id="page-bio">
+  <div class="section-header"><div class="back-btn" onclick="goHome()">← Inicio</div><div class="section-title">Biografía</div></div>
+  <div class="bio-wrap">
+    <div class="bio-left">
+      <h2>Cuerpo, deseo<br>y exceso</h2>
+      <p class="bio-text">Daniel Tejero Olivares (Granada, 1973) es escultor e investigador cuya trayectoria se articula en torno a la política del cuerpo, el género y la sexualidad. Su práctica abarca la escultura, la instalación, el dibujo y la escenografía, explorando los márgenes entre norma y disidencia hacia la celebración del deseo y los placeres periféricos.</p>
+      <p class="bio-text">Es Doctor en Bellas Artes por la Universitat Politècnica de València (2006, <em>cum laude</em>), con una tesis sobre la identidad gay en el arte valenciano de los años 90. En la actualidad es Catedrático de Escultura en la Facultad de Bellas Artes de Altea, perteneciente a la <em>Universidad Miguel Hernández</em>, donde dirige también el <em>Centro de Investigación en Arte</em> (CíA).</p>
+      <p class="bio-text">Su obra ha sido expuesta en espacios como la Galería Punto (Valencia), la Galería Kressler Battaglia (Valencia), la Fundación La Posta, el Centre de Cultura Contemporània de Valencia, la Sala Aifos de la Universitat d'Alacant, la Feria Art-Madrid, el <em>Xi'an Museum of Fine Arts</em> (China), la <em>Casa del Lago / UNAM</em> (México DF), el <em>Instituto Gino Germani</em> (Buenos Aires), el <em>ISA</em> de La Habana (Cuba) y la Casa Cantoni (Suiza), entre otros.</p>
+      <p class="bio-text">Dirige el grupo de investigación <em>Figuras del Exceso y Políticas del Cuerpo</em> (FIDEX), desde el que impulsa proyectos artísticos y académicos que cuestionan las representaciones hegemónicas del cuerpo y la sexualidad. Ha realizado escenografías para compañías teatrales como Bambalina Titelles y para directores como Juli Leal, Josep Lluís Sirera y Victoria Enguidanos.</p>
+      <p class="bio-text">Su producción pública incluye monumentos en el <em>Parque Escultórico de Luzón</em> (Guadalajara), el <em>Muelle de Las Carabelas</em> en La Rábida (Huelva), la obra dedicada al IV Centenario del Quijote en Gibraleón, y la intervención <em>Funambulista</em> en el ISA de La Habana (2020).</p>
+    </div>
+    <div class="bio-right">
+      <img src="Chicos de la Web/fotos de mi/foto dani.jpg" alt="Daniel Tejero Olivares" style="width:100%;aspect-ratio:3/4;object-fit:cover;object-position:top;margin-bottom:1.5rem;border-radius:2px;">
+      <div class="bio-right-label">Datos</div>
+      <div class="bio-fact"><div class="bio-fact-label">Nacimiento</div><div class="bio-fact-value">Granada, 1973</div></div>
+      <div class="bio-fact"><div class="bio-fact-label">Formación</div><div class="bio-fact-value">Doctor en Bellas Artes, UPV (2006, cum laude)</div></div>
+      <div class="bio-fact"><div class="bio-fact-label">Posición</div><div class="bio-fact-value">Catedrático de Escultura, Fac. BB.AA. Altea — Universidad Miguel Hernández</div></div>
+      <div class="bio-fact"><div class="bio-fact-label">Investigación</div><div class="bio-fact-value">Dir. Grupo FIDEX · Dir. Centro de Investigación en Arte (CíA) — UMH</div></div>
+      <div class="bio-fact"><div class="bio-fact-label">Práctica</div><div class="bio-fact-value">Escultura, instalación, dibujo, escenografía</div></div>
+      <div class="bio-fact"><div class="bio-fact-label">Temas</div><div class="bio-fact-value">Cuerpo, sexo, género, sexualidad, deseo, placeres periféricos</div></div>
+      <div class="bio-fact"><div class="bio-fact-label">Colecciones</div><div class="bio-fact-value">MUSEARI · Ayto. Luzón · Benigar Corp. · Ayto. Tavernes Blanques · Ayto. Meliana · Ayto. Gibraleón · Diputación de Huelva · Fundación CEU San Pablo · Muelle de Las Carabelas · Casal Jaime I</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- OBRAS -->
+<div class="page" id="page-obras">
+  <div class="section-header"><div class="back-btn" onclick="goHome()">← Inicio</div><div class="section-title">Obras</div></div>
+  <div class="series-list" id="series-list"></div>
+</div>
+
+<!-- SERIE -->
+<div class="page" id="page-serie">
+  <div class="section-header">
+    <div class="back-btn" onclick="showPage('obras')">← Obras</div>
+    <div><div class="breadcrumb">Obras /</div><div class="section-title" id="serie-breadcrumb-title"></div></div>
+  </div>
+  <div class="obras-header">
+    <div class="obras-series-name" id="serie-display-name"></div>
+    <div class="obras-series-meta" id="serie-display-meta"></div>
+  </div>
+  <div class="obras-grid" id="obras-grid"></div>
+</div>
+
+<!-- OBRA DETAIL -->
+<div class="page" id="page-obra">
+  <div class="section-header">
+    <div class="back-btn" id="back-to-serie">← Serie</div>
+    <div><div class="breadcrumb" id="obra-breadcrumb"></div><div class="section-title" id="obra-nav-title"></div></div>
+  </div>
+  <div class="obra-detail">
+    <div class="obra-detail-img" id="obra-detail-img-el">imagen</div>
+    <div class="obra-detail-title" id="obra-detail-title"></div>
+    <div class="obra-detail-meta" id="obra-detail-meta"></div>
+    <div class="obra-detail-desc" id="obra-detail-desc"></div>
+  </div>
+</div>
+
+<!-- TEXTOS -->
+<div class="page" id="page-textos">
+  <div class="section-header"><div class="back-btn" onclick="goHome()">← Inicio</div><div class="section-title">Textos</div></div>
+  <div class="textos-wrap">
+    <div class="textos-tabs">
+      <div class="textos-tab active" id="tab-propios" onclick="switchTextos('propios')">Propios</div>
+      <div class="textos-tab" id="tab-ajenos" onclick="switchTextos('ajenos')">Ajenos</div>
+    </div>
+    <div id="textos-content"></div>
+  </div>
+</div>
+
+<!-- CATÁLOGOS -->
+<div class="page" id="page-catalogos">
+  <div class="section-header"><div class="back-btn" onclick="goHome()">← Inicio</div><div class="section-title">Catálogos</div></div>
+  <div class="catalogo-grid" id="catalogo-grid"></div>
+</div>
+
+<!-- CV -->
+<div class="page" id="page-cv">
+  <div class="section-header"><div class="back-btn" onclick="goHome()">← Inicio</div><div class="section-title">Curriculum</div></div>
+  <div class="cv-cats" id="cv-cats"></div>
+  <div class="cv-grid" id="cv-grid"></div>
+</div>
+
+<!-- CV ITEM -->
+<div class="page" id="page-cv-item">
+  <div class="section-header">
+    <div class="back-btn" id="back-to-cv">← Curriculum</div>
+    <div><div class="breadcrumb" id="cv-item-breadcrumb"></div><div class="section-title" id="cv-item-nav-title"></div></div>
+  </div>
+  <div class="cv-detail">
+    <div class="cv-detail-year" id="cv-detail-year"></div>
+    <div class="cv-detail-title" id="cv-detail-title"></div>
+    <div class="cv-detail-meta" id="cv-detail-meta"></div>
+    <div class="cv-detail-desc" id="cv-detail-desc"></div>
+  </div>
+</div>
+
+<!-- CONTACTO -->
+<div class="page" id="page-contacto">
+  <div class="section-header"><div class="back-btn" onclick="goHome()">← Inicio</div><div class="section-title">Contacto</div></div>
+  <div class="contacto-wrap">
+    <h2>Contacto</h2>
+    <div class="contacto-item">
+      <div class="contacto-label">Institución</div>
+      <div class="contacto-value">Universidad Miguel Hernández — Facultad de Bellas Artes de Altea</div>
+    </div>
+    <div class="contacto-item">
+      <div class="contacto-label">Departamento</div>
+      <div class="contacto-value">Escultura</div>
+    </div>
+    <div class="contacto-item">
+      <div class="contacto-label">Dirección</div>
+      <div class="contacto-value">C/ Teatre, s/n — 03590 Altea, Alicante</div>
+    </div>
+    <div class="contacto-item">
+      <div class="contacto-label">Investigación</div>
+      <div class="contacto-value">Grupo FIDEX — Figuras del Exceso y Políticas del Cuerpo</div>
+    </div>
+    <div class="contacto-item">
+      <div class="contacto-label">Academia</div>
+      <div class="contacto-value"><a href="https://scholar.google.es" target="_blank">Google Scholar</a></div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-name">Daniel Tejero Olivares</div>
+  <div class="footer-copy">Artista plástico e investigador — Altea / Valencia</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
